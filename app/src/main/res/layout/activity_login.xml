@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:text="Crush"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_email"
+        style="@style/EditText"
+        android:layout_below="@id/logo"
+
+        android:hint=" Enter your email : "
+
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/login_password"
+
+        style="@style/EditText"
+        android:layout_below="@id/login_email"
+        android:layout_marginTop="8dp"
+        android:hint=" Enter your password : "
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Button"
+        android:layout_below="@id/login_password"
+        android:layout_centerHorizontal="true"
+        android:text="login"
+        android:textColor="#fafafa" />
+
+
+    <TextView
+        android:id="@+id/noAccountYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingLeft="60dp"
+        android:text="No  account  yet  ?"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/need_new_account_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/noAccountYet"
+        android:text="Create one"
+        android:textColor="#29b6f6" />
+
+
+    <RelativeLayout
+        android:id="@+id/orr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/need_new_account_link">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="#BCC3C9" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@+id/line1"
+            android:text="or "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <View android:id="@+id/line2"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="#BCC3C9"
+
+            android:layout_toRightOf="@+id/or"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            />
+    </RelativeLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/login_google"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/orr"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/gmail" />
+
+    <ImageView
+        android:id="@+id/login_phone"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/orr"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/phone" />
+</RelativeLayout>

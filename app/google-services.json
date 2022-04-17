@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "460371086207",
+    "project_id": "crush-d7d7a",
+    "storage_bucket": "crush-d7d7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460371086207:android:791c8fb241f941a16a284a",
+        "android_client_info": {
+          "package_name": "com.example.crush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460371086207-tmfs3b0lub85cl8gakuk8sbna5oigv6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuRLvK7MwP_gYkHzV5rhqVreCnSH696mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460371086207-tmfs3b0lub85cl8gakuk8sbna5oigv6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

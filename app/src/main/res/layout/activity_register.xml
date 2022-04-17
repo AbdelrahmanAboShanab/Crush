@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:text="Crush"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_email"
+        style="@style/EditText"
+        android:layout_below="@id/logo"
+
+        android:hint=" Enter your email : "
+
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/register_password"
+
+        style="@style/EditText"
+        android:layout_below="@id/register_email"
+        android:layout_marginTop="8dp"
+        android:hint=" Enter your password : "
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/register_button"
+        style="@style/Button"
+        android:layout_below="@id/register_password"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account"
+        android:textColor="#fafafa" />
+
+    <TextView
+        android:id="@+id/noAccountYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_button"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingLeft="60dp"
+        android:text="Already have account"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/already_have_account_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_button"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/noAccountYet"
+        android:text="Login"
+        android:textColor="#29b6f6" />
+
+
+</RelativeLayout>
